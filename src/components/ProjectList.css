@@ -1,0 +1,63 @@
+/* ProjectList Container */
+/* Center the ProjectList Container */
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 50px; /* Add some space at the top */
+  max-width: 1200px; /* Limit the width */
+  justify-content: center; /* Center items within the container */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+/* Individual ProjectItem Styles */
+.project-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Name */
+.project-item h3 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  color: #333333;
+}
+
+/* Project Description */
+.project-item p {
+  font-size: 1em;
+  color: #666666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Technologies */
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.technologies span {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
